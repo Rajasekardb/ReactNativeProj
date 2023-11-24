@@ -1,9 +1,9 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 
-import useStyleMenu from './useStyleMenu';
+import useStyleMenu from './useStyleMenuPage';
 
-function Menu() {
+function MenuPage() {
   const styles = useStyleMenu();
   return (
     <View style={styles.menu}>
@@ -12,4 +12,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default MenuPage;

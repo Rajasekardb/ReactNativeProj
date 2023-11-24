@@ -1,13 +1,9 @@
 import React from 'react';
-import {View} from 'react-native';
-import Menu from './src/page/menu/Menu';
+
+import RouterProvider from './src/routes/RouterProvider';
 
 function App() {
-  return (
-    <View>
-      <Menu />
-    </View>
-  );
+  return <RouterProvider />;
 }
 
 export default App;
