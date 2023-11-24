@@ -1,11 +1,11 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {View} from 'react-native';
+import Menu from './src/page/menu/Menu';
 
 function App() {
   return (
     <View>
-      <Text>test 2</Text>
-      <Text>Test</Text>
+      <Menu />
     </View>
   );
 }
