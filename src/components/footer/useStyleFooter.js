@@ -1,13 +1,13 @@
 import {StyleSheet} from 'react-native';
 
-function useStyleMenu() {
+function useStyleFooter() {
   const styles = StyleSheet.create({
-    menu: {
-      height: '100%',
+    footer: {
+      backgroundColor: 'blue',
     },
   });
 
   return styles;
 }
 
-export default useStyleMenu;
+export default useStyleFooter;
