@@ -1,9 +1,9 @@
 import React from 'react';
 import {View} from 'react-native';
 
-import Container from '../container/Container';
-import Header from '../header/Header';
-import Footer from '../footer/Footer';
+import Container from '../../src/components/container/Container';
+import Header from '../../src/components/header/Header';
+import Footer from '../../src/components/footer/Footer';
 
 import useStyleLayoutHoc from './useStyleLayoutHoc';
 import {SafeAreaView} from 'react-native-safe-area-context';
