@@ -3,18 +3,21 @@ import {Text, View, TouchableOpacity} from 'react-native';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faArrowLeft} from '@fortawesome/free-solid-svg-icons';
 import useStyleHeader from './useStyleHeader';
+import {useNavigation, useRoute} from '@react-navigation/native';
 
 import Container from '../container/Container';
-function Header({route, navigation, title}) {
+function Header({title}) {
   const styles = useStyleHeader();
+  const route = useRoute();
+  const navigation = useNavigation();
+  const goBack = () => navigation.goBack();
 
-  // console.log(route);
-  // console.log(navigation);
+  console.log(route);
 
   return (
     <View style={styles.header}>
       <Container>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={goBack}>
           <FontAwesomeIcon icon={faArrowLeft} />
         </TouchableOpacity>
         <Text>{title}</Text>
