@@ -5,11 +5,11 @@ import Container from '../container/Container';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 
-import useStyleLayoutMain from './useStyleLayoutMain';
+import useStyleLayoutHoc from './useStyleLayoutHoc';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
-function LayoutMain(Page, params) {
-  const styles = useStyleLayoutMain();
+function LayoutHoc(Page, params) {
+  const styles = useStyleLayoutHoc();
 
   return function (props) {
     return (
@@ -28,4 +28,4 @@ function LayoutMain(Page, params) {
   };
 }
 
-export default LayoutMain;
+export default LayoutHoc;

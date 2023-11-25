@@ -4,7 +4,7 @@ import {View, TouchableOpacity, Text} from 'react-native';
 import {routesButtonArray} from '../../routes/routes-data';
 
 import MenuItem from './menuItem/MenuItem';
-import LayoutMain from '../../components/layoutMain/LayoutMain';
+import LayoutHoc from '../../components/layoutHoc/LayoutHoc';
 
 import useStyleMenuPage from './useStyleMenuPage';
 import List from '../../components/list/List';
@@ -25,4 +25,4 @@ function MenuPage({navigation}) {
   );
 }
 
-export default LayoutMain(MenuPage, {title: 'MenuPage'});
+export default LayoutHoc(MenuPage, {title: 'MenuPage'});

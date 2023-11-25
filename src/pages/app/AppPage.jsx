@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 
-import LayoutMain from '../../components/layoutMain/LayoutMain';
+import LayoutHoc from '../../components/layoutHoc/LayoutHoc';
 
 import useStyleAppPage from './useStyleAppPage';
 
@@ -14,4 +14,4 @@ function AppPage() {
   );
 }
 
-export default LayoutMain(AppPage, {title: 'AppPage'});
+export default LayoutHoc(AppPage, {title: 'AppPage'});

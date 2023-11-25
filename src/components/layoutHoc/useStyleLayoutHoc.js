@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-function useStyleLayoutMain() {
+function useStyleLayoutHoc() {
   const styles = StyleSheet.create({
     layout: {
       flex: 1,
@@ -17,4 +17,4 @@ function useStyleLayoutMain() {
   return styles;
 }
 
-export default useStyleLayoutMain;
+export default useStyleLayoutHoc;
