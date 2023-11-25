@@ -4,13 +4,16 @@ import {Text, View} from 'react-native';
 import useStyleHeader from './useStyleHeader';
 
 import Container from '../container/Container';
-function Header() {
+function Header({route, navigation, title}) {
   const styles = useStyleHeader();
+
+  // console.log(route);
+  // console.log(navigation);
 
   return (
     <View style={styles.header}>
       <Container>
-        <Text>Header222</Text>
+        <Text>{title}</Text>
       </Container>
     </View>
   );

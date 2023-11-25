@@ -8,13 +8,13 @@ import Footer from '../footer/Footer';
 import useStyleLayoutMain from './useStyleLayoutMain';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
-function LayoutMain(Page) {
+function LayoutMain(Page, params) {
   const styles = useStyleLayoutMain();
 
   return function (props) {
     return (
       <SafeAreaView style={styles.layout}>
-        <Header />
+        <Header {...props} title={params.title} />
 
         <View style={styles.main}>
           <Container>
