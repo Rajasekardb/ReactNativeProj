@@ -1,11 +1,10 @@
 import React from 'react';
-import {Text, View, TouchableOpacity} from 'react-native';
+import {Text, View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-import {faArrowLeft} from '@fortawesome/free-solid-svg-icons';
 import useStyleHeader from './useStyleHeader';
 
 import Container from '../container/Container';
+import ButtonIcon from '../buttonIcon/ButtonIcon';
 function Header({title}) {
   const styles = useStyleHeader();
   const navigation = useNavigation();
@@ -14,10 +13,11 @@ function Header({title}) {
   return (
     <View style={styles.header}>
       <Container>
-        <TouchableOpacity onPress={goBack}>
-          <FontAwesomeIcon icon={faArrowLeft} />
-        </TouchableOpacity>
-        <Text>{title}</Text>
+        <View style={styles.inner}>
+          <ButtonIcon onPress={goBack} />
+          <Text style={styles.title}>{title}</Text>
+          <ButtonIcon onPress={goBack} />
+        </View>
       </Container>
     </View>
   );
