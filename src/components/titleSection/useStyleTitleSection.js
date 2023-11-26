@@ -6,7 +6,6 @@ function useStyleTitleSection() {
     boxTitle: {
       paddingVertical: 5,
       paddingHorizontal: 30,
-      marginBottom: 8,
       borderRadius: 10,
       backgroundColor: COLORS.white,
     },

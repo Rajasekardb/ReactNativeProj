@@ -5,7 +5,7 @@ function useStyleProductItem() {
   const styles = StyleSheet.create({
     item: {
       flex: 1,
-      flexBasis: '45%',
+      flexBasis: '10%',
       backgroundColor: COLORS.white,
       borderRadius: 15,
       overflow: 'hidden',

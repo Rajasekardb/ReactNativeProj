@@ -7,9 +7,14 @@ function useStyleProductsPage() {
       // backgroundColor: 'green',
     },
 
-    test: {
-      height: '73%',
-      backgroundColor: 'violet',
+    productSection: {},
+
+    productList: {
+      flex: 1,
+      marginVertical: 15,
+      flexWrap: 'wrap',
+      gap: 20,
+      backgroundColor: 'red',
     },
   });
 
