@@ -1,15 +1,24 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {View, ScrollView} from 'react-native';
 
+import productsStore from '../../store/productsStore';
 import LayoutMain from '../../components/layoutMain/LayoutMain';
+import List from '../../components/list/List';
+import ProductItem from './productItem/ProductItem';
+
 import useStyleProductsPage from './useStyleProductsPage';
 
 function ProductsPage() {
   const styles = useStyleProductsPage();
+  const {productListAll} = productsStore;
   return (
     <LayoutMain title="Продукты">
       <View style={styles.page}>
-        <Text>ProductsPage</Text>
+        <ScrollView>
+          <View style={styles.list}>
+            <List data={productListAll} Component={ProductItem} />
+          </View>
+        </ScrollView>
       </View>
     </LayoutMain>
   );
