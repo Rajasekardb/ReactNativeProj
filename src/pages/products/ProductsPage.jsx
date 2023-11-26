@@ -1,24 +1,21 @@
 import React from 'react';
 import {View, ScrollView} from 'react-native';
-
-import productsStore from '../../store/productsStore';
 import LayoutMain from '../../components/layoutMain/LayoutMain';
-import List from '../../components/list/List';
-import ProductItem from './productItem/ProductItem';
 
 import useStyleProductsPage from './useStyleProductsPage';
+import CategoriesSection from './categoriesSection/CategoriesSection';
+import ProductsSection from './productsSection/ProductsSection';
+import Button from '../../components/button/Button';
 
 function ProductsPage() {
   const styles = useStyleProductsPage();
-  const {productListAll} = productsStore;
+
   return (
     <LayoutMain title="Продукты">
       <View style={styles.page}>
-        <ScrollView>
-          <View style={styles.list}>
-            <List data={productListAll} Component={ProductItem} />
-          </View>
-        </ScrollView>
+        <CategoriesSection />
+        {/* <ProductsSection /> */}
+        <Button title="Кнопка" />
       </View>
     </LayoutMain>
   );

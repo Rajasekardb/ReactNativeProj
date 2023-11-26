@@ -13,7 +13,7 @@ function MenuPage({navigation}) {
   const styles = useStyleMenuPage();
 
   return (
-    <LayoutImage title="Меню" imgSrc={require('../../assets/images/bg/2.webp')}>
+    <LayoutImage title="Меню" imgSrc={require('../../assets/images/bg/1.webp')}>
       <View style={styles.page}>
         <View style={styles.list}>
           <List

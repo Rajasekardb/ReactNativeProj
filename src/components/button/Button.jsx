@@ -6,8 +6,8 @@ import useStyleButton from './useStyleButton';
 function Button({title, onPress}) {
   const styles = useStyleButton();
   return (
-    <TouchableOpacity style={styles} onPress={onPress}>
-      <Text>{title}</Text>
+    <TouchableOpacity style={styles.button} onPress={onPress}>
+      <Text style={styles.title}>{title}</Text>
     </TouchableOpacity>
   );
 }

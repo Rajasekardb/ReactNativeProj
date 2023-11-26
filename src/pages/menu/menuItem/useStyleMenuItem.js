@@ -1,17 +1,21 @@
 import {StyleSheet} from 'react-native';
+import COLORS from '../../../assets/styles/stylesColors';
 
 function useStyleMenuItem() {
   const styles = StyleSheet.create({
     button: {
-      height: 50,
       justifyContent: 'center',
       alignItems: 'center',
       padding: 15,
-      backgroundColor: 'rgba(0, 0, 0, .5)',
-      borderRadius: 8,
+      backgroundColor: COLORS.accent,
+      borderRadius: 10,
+      elevation: 10,
     },
     title: {
-      color: 'red',
+      fontSize: 20,
+      fontWeight: '800',
+      textTransform: 'uppercase',
+      color: COLORS.black,
     },
   });
 
