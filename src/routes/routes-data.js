@@ -1,5 +1,6 @@
 import AppPage from '../pages/app/AppPage';
 import MenuPage from '../pages/menu/MenuPage';
+import ProductsPage from '../pages/products/ProductsPage';
 import TestPage from '../pages/test/TestPage';
 
 const routesData = {
@@ -12,8 +13,17 @@ const routesData = {
     options: {headerShown: false},
   },
 
-  app: {
+  products: {
     id: 1,
+    name: 'products',
+    component: ProductsPage,
+    title: 'Продукты',
+    isShowButton: true,
+    options: {headerShown: false},
+  },
+
+  app: {
+    id: 101,
     name: 'app',
     component: AppPage,
     title: 'Апп',
@@ -22,7 +32,7 @@ const routesData = {
   },
 
   test: {
-    id: 2,
+    id: 102,
     name: 'test',
     component: TestPage,
     title: 'Тест',

@@ -4,7 +4,7 @@ import {View, TouchableOpacity, Text} from 'react-native';
 import {routesButtonArray} from '../../routes/routes-data';
 
 import MenuItem from './menuItem/MenuItem';
-import LayoutMain from '../../components/layoutMain/LayoutMain';
+import LayoutImage from '../../components/layoutImage/LayoutImage';
 
 import useStyleMenuPage from './useStyleMenuPage';
 import List from '../../components/list/List';
@@ -13,7 +13,7 @@ function MenuPage({navigation}) {
   const styles = useStyleMenuPage();
 
   return (
-    <LayoutMain title="Меню">
+    <LayoutImage title="Меню" imgSrc={require('../../assets/images/bg/2.webp')}>
       <View style={styles.page}>
         <View style={styles.list}>
           <List
@@ -23,7 +23,7 @@ function MenuPage({navigation}) {
           />
         </View>
       </View>
-    </LayoutMain>
+    </LayoutImage>
   );
 }
 
