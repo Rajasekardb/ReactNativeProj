@@ -14,7 +14,10 @@ function ProductsPage() {
     <LayoutMain title="Продукты">
       <View style={styles.page}>
         <CategoriesSection />
-        {/* <ProductsSection /> */}
+        <View style={styles.test}>
+          <ProductsSection />
+        </View>
+
         <Button title="Кнопка" />
       </View>
     </LayoutMain>
