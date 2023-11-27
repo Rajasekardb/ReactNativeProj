@@ -1,6 +1,6 @@
 import {generateId} from '../../utils/utils';
 
-const productData = [
+const PRODUCT_ARRAY_DATA = [
   {
     title: 'product 1',
     desc: 'Эта книга содержит множество рецептов на различные блюда. Она может быть использована как начинающими, так и опытными поварами и имеет множество полезных советов',
@@ -50,7 +50,7 @@ const productData = [
   },
 ];
 
-export default productData.map(product => ({
+export default PRODUCT_ARRAY_DATA.map(product => ({
   ...product,
   id: generateId(),
   count: 1,

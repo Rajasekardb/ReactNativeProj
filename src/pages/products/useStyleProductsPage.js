@@ -9,12 +9,16 @@ function useStyleProductsPage() {
 
     productSection: {},
 
-    productList: {
+    scroll: {
       flex: 1,
+      backgroundColor: 'red',
+    },
+
+    productList: {
       marginVertical: 15,
+      flexDirection: 'row',
       flexWrap: 'wrap',
       gap: 20,
-      backgroundColor: 'red',
     },
   });
 

@@ -3,7 +3,7 @@ import MenuPage from '../pages/menu/MenuPage';
 import ProductsPage from '../pages/products/ProductsPage';
 import TestPage from '../pages/test/TestPage';
 
-const routesData = {
+const ROUTES_DATA = {
   home: {
     id: 0,
     name: 'menu',
@@ -41,8 +41,8 @@ const routesData = {
   },
 };
 
-const routesArray = Object.entries(routesData).map(([key, obj]) => obj);
+const ROUTES_ARRAY_DATA = Object.entries(ROUTES_DATA).map(([key, obj]) => obj);
 
-const routesButtonArray = routesArray.filter(item => item.isShowButton);
+const ROUTES_ARRAY_BUTTON = ROUTES_ARRAY_DATA.filter(item => item.isShowButton);
 
-export {routesData, routesArray, routesButtonArray};
+export {ROUTES_DATA, ROUTES_ARRAY_DATA, ROUTES_ARRAY_BUTTON};

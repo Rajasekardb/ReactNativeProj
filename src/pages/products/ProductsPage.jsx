@@ -20,8 +20,10 @@ function ProductsPage() {
         <TitleSection title="Категории:" />
         <TitleSection title="Продукты:" />
 
-        <ScrollView style={styles.productList}>
-          <List data={productListAll} Component={ProductItem} />
+        <ScrollView style={styles.scroll}>
+          <View style={styles.productList}>
+            <List data={productListAll} Component={ProductItem} />
+          </View>
         </ScrollView>
 
         <Button title="Кнопка" />

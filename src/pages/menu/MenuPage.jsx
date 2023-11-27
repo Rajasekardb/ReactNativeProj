@@ -1,7 +1,7 @@
 import React from 'react';
-import {View, TouchableOpacity, Text} from 'react-native';
+import {View} from 'react-native';
 
-import {routesButtonArray} from '../../routes/routes-data';
+import {ROUTES_ARRAY_BUTTON} from '../../routes/routes-data';
 
 import MenuItem from './menuItem/MenuItem';
 import LayoutImage from '../../components/layoutImage/LayoutImage';
@@ -17,7 +17,7 @@ function MenuPage({navigation}) {
       <View style={styles.page}>
         <View style={styles.list}>
           <List
-            data={routesButtonArray}
+            data={ROUTES_ARRAY_BUTTON}
             Component={MenuItem}
             onPress={name => navigation.push(name)}
           />
