@@ -3,18 +3,28 @@ import {StyleSheet} from 'react-native';
 function useStyleProductsPage() {
   const styles = StyleSheet.create({
     page: {
-      height: '100%',
+      flex: 1,
       // backgroundColor: 'green',
     },
 
-    productSection: {},
+    scrollTabs: {
+      flex: 1,
+      maxHeight: 100,
+      backgroundColor: 'green',
+    },
 
-    scroll: {
+    tabsList: {
+      flexDirection: 'row',
+      margin: 15,
+      gap: 15,
+    },
+
+    scrollProducts: {
       flex: 1,
       backgroundColor: 'red',
     },
 
-    productList: {
+    productsList: {
       marginVertical: 15,
       flexDirection: 'row',
       flexWrap: 'wrap',
