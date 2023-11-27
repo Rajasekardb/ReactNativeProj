@@ -4,6 +4,7 @@ function useStyleLayoutMain() {
   const styles = StyleSheet.create({
     layout: {
       flex: 1,
+      flexGrow: 1,
       // width: Dimensions.get('window').width,
       // height: Dimensions.get('window').height,
       justifyContent: 'space-between',

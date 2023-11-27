@@ -21,21 +21,22 @@ function ProductsPage() {
     <LayoutMain title="Продукты">
       <View style={styles.page}>
         <TitleSection title="Категории:" />
-        <ScrollView style={styles.scrollTabs} horizontal>
-          <View style={styles.tabsList}>
-            <List
-              data={CATEGORIES_ARRAY_DATA}
-              Component={TabIconItem}
-              iconSize={48}
-            />
-          </View>
+        <ScrollView
+          style={styles.scrollTabs}
+          contentContainerStyle={styles.tabsList}
+          horizontal>
+          <List
+            data={CATEGORIES_ARRAY_DATA}
+            Component={TabIconItem}
+            iconSize={48}
+          />
         </ScrollView>
 
         <TitleSection title="Продукты:" />
-        <ScrollView style={styles.scrollProducts}>
-          <View style={styles.productsList}>
-            <List data={productListAll} Component={ProductItem} />
-          </View>
+        <ScrollView
+          style={styles.scrollProducts}
+          contentContainerStyle={styles.productsList}>
+          <List data={productListAll} Component={ProductItem} />
         </ScrollView>
 
         <Button title="Кнопка" />
