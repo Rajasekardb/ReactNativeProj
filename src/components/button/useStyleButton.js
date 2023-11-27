@@ -7,6 +7,7 @@ function useStyleButton() {
       justifyContent: 'center',
       alignItems: 'center',
       padding: 15,
+      margin: 5,
       backgroundColor: COLORS.accent,
       borderRadius: 10,
       elevation: 10,

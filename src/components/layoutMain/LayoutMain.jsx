@@ -6,6 +6,7 @@ import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import Container from '../container/Container';
 import useStyleLayoutMain from './useStyleLayoutMain';
+import Navigation from '../navigation/Navigation';
 
 function LayoutMain({children, title}) {
   const styles = useStyleLayoutMain();
@@ -17,7 +18,7 @@ function LayoutMain({children, title}) {
         <Container>{children}</Container>
       </View>
 
-      <Footer />
+      <Navigation />
     </SafeAreaView>
   );
 }

@@ -3,6 +3,7 @@ import {StyleSheet} from 'react-native';
 function useStyleHeader() {
   const styles = StyleSheet.create({
     header: {
+      flexBasis: 58,
       backgroundColor: 'tomato',
     },
 

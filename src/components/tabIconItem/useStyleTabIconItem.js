@@ -6,7 +6,7 @@ function useStyleTabIconItem(isActive) {
     tab: {
       justifyContent: 'center',
       alignItems: 'center',
-      padding: 15,
+      padding: 7,
       borderRadius: 10,
       elevation: 7,
       backgroundColor: isActive ? COLORS.accent : COLORS.white,

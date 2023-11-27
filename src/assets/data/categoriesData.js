@@ -2,7 +2,7 @@ const CATEGORIES_DATA = {
   all: {
     id: '0',
     title: 'Все',
-    iconName: 'border-all',
+    iconName: 'globe',
     type: 'all',
   },
 

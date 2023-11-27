@@ -11,6 +11,7 @@ import ProductItem from './productItem/ProductItem';
 
 import useStyleProductsPage from './useStyleProductsPage';
 import TabIconItem from '../../components/tabIconItem/TabIconItem';
+import COLORS from '../../assets/styles/stylesColors';
 
 function ProductsPage() {
   const styles = useStyleProductsPage();
@@ -22,7 +23,11 @@ function ProductsPage() {
         <TitleSection title="Категории:" />
         <ScrollView style={styles.scrollTabs} horizontal>
           <View style={styles.tabsList}>
-            <List data={CATEGORIES_ARRAY_DATA} Component={TabIconItem} />
+            <List
+              data={CATEGORIES_ARRAY_DATA}
+              Component={TabIconItem}
+              iconSize={48}
+            />
           </View>
         </ScrollView>
 

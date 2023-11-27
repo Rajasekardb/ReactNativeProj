@@ -2,7 +2,7 @@ import React from 'react';
 import {Text, View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
-import {routesData} from '../../routes/routes-data';
+import {ROUTES_DATA} from '../../routes/routes-data';
 import Container from '../container/Container';
 import ButtonIcon from '../buttonIcon/ButtonIcon';
 
@@ -11,7 +11,7 @@ function Header({title}) {
   const styles = useStyleHeader();
   const navigation = useNavigation();
   const goBack = () => navigation.goBack();
-  const goMenu = () => navigation.push(routesData.home.name);
+  const goMenu = () => navigation.push(ROUTES_DATA.home.name);
 
   return (
     <View style={styles.header}>

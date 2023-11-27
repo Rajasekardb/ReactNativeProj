@@ -1,9 +1,11 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 
 function useStyleLayoutMain() {
   const styles = StyleSheet.create({
     layout: {
       flex: 1,
+      // width: Dimensions.get('window').width,
+      // height: Dimensions.get('window').height,
       justifyContent: 'space-between',
       backgroundColor: 'green',
     },

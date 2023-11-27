@@ -3,12 +3,13 @@ import {
   faBars,
   faPlus,
   faMinus,
-  faBorderAll,
   faHeart,
   faBomb,
   faStar,
   faPoo,
   faFaceSmile,
+  faGlobe,
+  faBasketShopping,
 } from '@fortawesome/free-solid-svg-icons';
 import {library} from '@fortawesome/fontawesome-svg-core';
 
@@ -17,10 +18,11 @@ library.add(
   faBars,
   faPlus,
   faMinus,
-  faBorderAll,
+  faGlobe,
   faHeart,
   faBomb,
   faStar,
   faPoo,
   faFaceSmile,
+  faBasketShopping,
 );
