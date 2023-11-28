@@ -4,15 +4,17 @@ import useStyleRootTest from './useStyleRootTest';
 import SectionProducts from '../sectionProducts/SectionProducts';
 import SectionCategories from '../sectionCategories/SectionCategories';
 import NavigationTest from '../navigationTest/NavigationTest';
+import HeaderTest from '../headerTest/HeaderTest';
 
 function RootTest() {
   const styles = useStyleRootTest();
 
   return (
     <View style={styles.layout}>
-      <View style={styles.header}>
+      <HeaderTest />
+      {/* <View style={styles.header}>
         <Text style={styles.text}>Header</Text>
-      </View>
+      </View> */}
 
       <View style={styles.main}>
         <Text style={styles.text}>Main</Text>
