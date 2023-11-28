@@ -1,7 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
 import useStyleRootTest from './useStyleRootTest';
-import SectionProducts from '../sectionProducts/SectionProducts';
+import SectionProducts from '../../../src/pages/products/sectionProducts/SectionProducts';
 import SectionCategories from '../sectionCategories/SectionCategories';
 
 import ButtonTest from '../buttonTest/ButtonTest';

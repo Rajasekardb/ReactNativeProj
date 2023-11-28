@@ -10,14 +10,18 @@ function useStyleLayoutMain() {
       backgroundColor: 'green',
     },
 
-    header: {},
+    header: {
+      backgroundColor: 'blue',
+    },
 
     main: {
       flex: 1,
       backgroundColor: 'orange',
     },
 
-    navigation: {},
+    navigation: {
+      backgroundColor: 'blue',
+    },
   });
 
   return styles;

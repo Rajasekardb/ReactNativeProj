@@ -1,11 +1,13 @@
 import React from 'react';
 import {ScrollView, View} from 'react-native';
 
-import useStyleSectionProducts from '../../../../dev/testLayout/sectionProducts/useStyleSectionProducts';
+import productsStore from '../../../store/productsStore';
+
 import TitleSection from '../../../components/titleSection/TitleSection';
 import List from '../../../components/list/List';
-import productsStore from '../../../store/productsStore';
-import ProductItemTest from '../../../../dev/testLayout/productItemTest/ProductItemTest';
+import ProductItem from '../productItem/ProductItem';
+
+import useStyleSectionProducts from './useStyleSectionProducts';
 
 function SectionProducts() {
   const styles = useStyleSectionProducts();
@@ -15,7 +17,7 @@ function SectionProducts() {
       <TitleSection title="Продукты:" />
 
       <ScrollView style={styles.scroll} contentContainerStyle={styles.list}>
-        <List data={productListAll} Component={ProductItemTest} />
+        <List data={productListAll} Component={ProductItem} />
       </ScrollView>
     </View>
   );
