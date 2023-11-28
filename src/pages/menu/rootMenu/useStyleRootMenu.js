@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-function useStyleMenu() {
+function useStyleRootMenu() {
   const styles = StyleSheet.create({
     page: {
       paddingTop: 50,
@@ -14,4 +14,4 @@ function useStyleMenu() {
   return styles;
 }
 
-export default useStyleMenu;
+export default useStyleRootMenu;

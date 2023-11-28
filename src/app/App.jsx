@@ -1,6 +1,6 @@
 import React from 'react';
 import RouterProvider from '../routes/RouterProvider';
-import '../fontAwesome.js';
+import '../assets/font/fontAwesome.js';
 
 function App() {
   return <RouterProvider />;

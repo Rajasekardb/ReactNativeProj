@@ -1,20 +1,20 @@
 import React from 'react';
 import {View, ScrollView} from 'react-native';
-import LayoutMain from '../../components/layoutMain/LayoutMain';
+import LayoutMain from '../../../components/layoutMain/LayoutMain';
 
-import {CATEGORIES_ARRAY_DATA} from '../../assets/data/categoriesData';
-import productsStore from '../../store/productsStore';
-import TitleSection from '../../components/titleSection/TitleSection';
-import Button from '../../components/button/Button';
-import List from '../../components/list/List';
-import ProductItem from './productItem/ProductItem';
+import {CATEGORIES_ARRAY_DATA} from '../../../assets/data/categoriesData';
+import productsStore from '../../../store/productsStore';
+import TitleSection from '../../../components/titleSection/TitleSection';
+import Button from '../../../components/button/Button';
+import List from '../../../components/list/List';
+import ProductItem from '../productItem/ProductItem';
 
-import useStyleProductsPage from './useStyleProductsPage';
-import TabIconItem from '../../components/tabIconItem/TabIconItem';
-import COLORS from '../../assets/styles/stylesColors';
+import TabIconItem from '../../../components/tabIconItem/TabIconItem';
+import COLORS from '../../../assets/styles/stylesColors';
+import useStyleRootProducts from './useStyleRootProducts';
 
-function ProductsPage() {
-  const styles = useStyleProductsPage();
+function RootProducts() {
+  const styles = useStyleRootProducts();
   const {productListAll} = productsStore;
 
   return (
@@ -45,4 +45,4 @@ function ProductsPage() {
   );
 }
 
-export default ProductsPage;
+export default RootProducts;

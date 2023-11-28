@@ -1,9 +1,9 @@
 import {StyleSheet} from 'react-native';
 
-function useStyleTestPage() {
+function useStyleSectionProducts() {
   const styles = StyleSheet.create({});
 
   return styles;
 }
 
-export default useStyleTestPage;
+export default useStyleSectionProducts;

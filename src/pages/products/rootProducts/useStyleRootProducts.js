@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-function useStyleProductsPage() {
+function useStyleRootProducts() {
   const styles = StyleSheet.create({
     page: {
       flex: 1,
@@ -36,4 +36,4 @@ function useStyleProductsPage() {
   return styles;
 }
 
-export default useStyleProductsPage;
+export default useStyleRootProducts;

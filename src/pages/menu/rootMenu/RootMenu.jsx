@@ -1,16 +1,16 @@
 import React from 'react';
 import {View} from 'react-native';
 
-import {ROUTES_ARRAY_BUTTON} from '../../routes/routes-data';
+import {ROUTES_ARRAY_BUTTON} from '../../../routes/routes-data';
 
-import MenuItem from './menuItem/MenuItem';
-import LayoutImage from '../../components/layoutImage/LayoutImage';
+import MenuItem from '../menuItem/MenuItem';
+import LayoutImage from '../../../components/layoutImage/LayoutImage';
 
-import useStyleMenuPage from './useStyleMenuPage';
-import List from '../../components/list/List';
+import useStyleRootMenu from './useStyleRootMenu';
+import List from '../../../components/list/List';
 
-function MenuPage({navigation}) {
-  const styles = useStyleMenuPage();
+function RootMenu({navigation}) {
+  const styles = useStyleRootMenu();
 
   return (
     <LayoutImage title="Меню" imgSrc={require('../../assets/images/bg/1.webp')}>
@@ -27,4 +27,4 @@ function MenuPage({navigation}) {
   );
 }
 
-export default MenuPage;
+export default RootMenu;

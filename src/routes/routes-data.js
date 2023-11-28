@@ -1,7 +1,7 @@
 import AppPage from '../pages/app/AppPage';
-import MenuPage from '../pages/menu/MenuPage';
-import ProductsPage from '../pages/products/ProductsPage';
-import TestPage from '../pages/test/TestPage';
+import MenuPage from '../pages/menu/rootMenu/RootMenu';
+import ProductsPage from '../pages/products/rootProducts/RootProducts';
+import ScreenTest from '../pages/test/rootTest/RootTest';
 
 const ROUTES_DATA = {
   home: {
@@ -34,7 +34,7 @@ const ROUTES_DATA = {
   test: {
     id: 102,
     name: 'test',
-    component: TestPage,
+    component: ScreenTest,
     title: 'Тест',
     isShowButton: true,
     options: {headerShown: false},
