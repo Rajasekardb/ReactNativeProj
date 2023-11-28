@@ -29,23 +29,6 @@ function useStyleRootTest() {
       textAlign: 'center',
       color: 'red',
     },
-
-    // Tabs
-    scrollTabs: {},
-    tabsList: {
-      alignItems: 'flex-start',
-      padding: 8,
-      gap: 15,
-    },
-
-    // Products
-    scrollProducts: {},
-    productsList: {
-      flexDirection: 'row',
-      flexWrap: 'wrap',
-      gap: 15,
-      padding: 8,
-    },
   });
 
   return styles;

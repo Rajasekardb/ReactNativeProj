@@ -1,18 +1,17 @@
 import {StyleSheet} from 'react-native';
 
-function useStyleSectionProducts() {
+function useStyleSectionCategories() {
   const styles = StyleSheet.create({
     section: {},
     scroll: {},
     list: {
-      flexDirection: 'row',
-      flexWrap: 'wrap',
-      gap: 15,
+      alignItems: 'flex-start',
       padding: 8,
+      gap: 15,
     },
   });
 
   return styles;
 }
 
-export default useStyleSectionProducts;
+export default useStyleSectionCategories;
