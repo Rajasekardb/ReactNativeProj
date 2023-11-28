@@ -2,7 +2,9 @@ import {StyleSheet} from 'react-native';
 
 function useStyleSectionProducts() {
   const styles = StyleSheet.create({
-    section: {},
+    section: {
+      flex: 1,
+    },
     scroll: {},
     list: {
       flexDirection: 'row',
