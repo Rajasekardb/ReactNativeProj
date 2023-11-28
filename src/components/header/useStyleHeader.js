@@ -3,11 +3,6 @@ import {StyleSheet} from 'react-native';
 function useStyleHeader() {
   const styles = StyleSheet.create({
     header: {
-      flexBasis: 58,
-      backgroundColor: 'tomato',
-    },
-
-    inner: {
       flexDirection: 'row',
       justifyContent: 'space-between',
       alignItems: 'center',

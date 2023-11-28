@@ -3,7 +3,6 @@ import {View} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
 import Header from '../header/Header';
-import Footer from '../footer/Footer';
 import Container from '../container/Container';
 import useStyleLayoutMain from './useStyleLayoutMain';
 import Navigation from '../navigation/Navigation';
@@ -12,13 +11,21 @@ function LayoutMain({children, title}) {
   const styles = useStyleLayoutMain();
   return (
     <SafeAreaView style={styles.layout}>
-      <Header title={title} />
-
-      <View style={styles.main}>
-        <Container>{children}</Container>
+      <View style={styles.header}>
+        <Container>
+          <Header title={title} />
+        </Container>
       </View>
 
-      <Navigation />
+      <View style={styles.main}>
+        <Container full={true}>{children}</Container>
+      </View>
+
+      <View style={styles.navigation}>
+        <Container>
+          <Navigation />
+        </Container>
+      </View>
     </SafeAreaView>
   );
 }

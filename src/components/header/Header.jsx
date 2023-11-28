@@ -3,10 +3,10 @@ import {Text, View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
 import {ROUTES_DATA} from '../../routes/routes-data';
-import Container from '../container/Container';
 import ButtonIcon from '../buttonIcon/ButtonIcon';
 
 import useStyleHeader from './useStyleHeader';
+
 function Header({title}) {
   const styles = useStyleHeader();
   const navigation = useNavigation();
@@ -15,13 +15,9 @@ function Header({title}) {
 
   return (
     <View style={styles.header}>
-      <Container>
-        <View style={styles.inner}>
-          <ButtonIcon onPress={goBack} iconName="arrow-left" />
-          <Text style={styles.title}>{title}</Text>
-          <ButtonIcon onPress={goMenu} iconName="bars" />
-        </View>
-      </Container>
+      <ButtonIcon onPress={goBack} iconName="arrow-left" />
+      <Text style={styles.title}>{title}</Text>
+      <ButtonIcon onPress={goMenu} iconName="bars" />
     </View>
   );
 }

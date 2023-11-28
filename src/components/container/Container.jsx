@@ -1,10 +1,10 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {View} from 'react-native';
 
 import useStyleContainer from './useStyleContainer';
 
-function Container({children}) {
-  const styles = useStyleContainer();
+function Container({children, full = false}) {
+  const styles = useStyleContainer(full);
   return <View style={styles.container}>{children}</View>;
 }
 

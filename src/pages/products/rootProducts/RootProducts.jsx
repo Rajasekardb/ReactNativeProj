@@ -10,7 +10,6 @@ import List from '../../../components/list/List';
 import ProductItem from '../productItem/ProductItem';
 
 import TabIconItem from '../../../components/tabIconItem/TabIconItem';
-import COLORS from '../../../assets/styles/stylesColors';
 import useStyleRootProducts from './useStyleRootProducts';
 
 function RootProducts() {

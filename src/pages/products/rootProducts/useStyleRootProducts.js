@@ -15,21 +15,21 @@ function useStyleRootProducts() {
 
     tabsList: {
       backgroundColor: 'purple',
-      flexDirection: 'row',
-      margin: 15,
+      margin: 8,
       gap: 15,
     },
 
-    // scrollProducts: {
-    //   flex: 1,
-    //   backgroundColor: 'red',
-    // },
+    scrollProducts: {
+      // flex: 1,
+      backgroundColor: 'red',
+    },
 
     productsList: {
+      margin: 8,
       marginVertical: 15,
       flexDirection: 'row',
       flexWrap: 'wrap',
-      gap: 20,
+      gap: 15,
     },
   });
 
