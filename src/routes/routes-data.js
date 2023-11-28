@@ -1,7 +1,7 @@
 import AppPage from '../pages/app/AppPage';
 import MenuPage from '../pages/menu/rootMenu/RootMenu';
 import ProductsPage from '../pages/products/rootProducts/RootProducts';
-import ScreenTest from '../pages/test/rootTest/RootTest';
+// import ScreenTest from '../pages/test/rootTest/RootTest';
 
 const ROUTES_DATA = {
   home: {
@@ -31,14 +31,14 @@ const ROUTES_DATA = {
     options: {headerShown: false},
   },
 
-  test: {
-    id: 102,
-    name: 'test',
-    component: ScreenTest,
-    title: 'Тест',
-    isShowButton: true,
-    options: {headerShown: false},
-  },
+  // test: {
+  //   id: 102,
+  //   name: 'test',
+  //   component: ScreenTest,
+  //   title: 'Тест',
+  //   isShowButton: true,
+  //   options: {headerShown: false},
+  // },
 };
 
 const ROUTES_ARRAY_DATA = Object.entries(ROUTES_DATA).map(([key, obj]) => obj);

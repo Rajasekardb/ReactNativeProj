@@ -15,11 +15,9 @@ function HeaderTest({title}) {
 
   return (
     <View style={styles.header}>
-      <View style={styles.inner}>
-        <ButtonIcon onPress={goBack} iconName="arrow-left" />
-        <Text style={styles.title}>{title}</Text>
-        <ButtonIcon onPress={goMenu} iconName="bars" />
-      </View>
+      <ButtonIcon onPress={goBack} iconName="arrow-left" />
+      <Text style={styles.title}>{title}</Text>
+      <ButtonIcon onPress={goMenu} iconName="bars" />
     </View>
   );
 }

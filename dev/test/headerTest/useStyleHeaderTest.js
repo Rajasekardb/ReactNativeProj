@@ -3,16 +3,11 @@ import {StyleSheet} from 'react-native';
 function useStyleHeaderTest() {
   const styles = StyleSheet.create({
     header: {
-      flexBasis: 58,
-      backgroundColor: 'tomato',
-    },
-
-    inner: {
       flexDirection: 'row',
       justifyContent: 'space-between',
       alignItems: 'center',
       paddingVertical: 8,
-      backgroundColor: 'gold',
+      // backgroundColor: 'gold',
     },
 
     title: {
