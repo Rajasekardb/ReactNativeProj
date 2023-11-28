@@ -1,12 +1,9 @@
 import React from 'react';
-import {ScrollView, Text, View} from 'react-native';
+import {Text, View} from 'react-native';
 import useStyleRootTest from './useStyleRootTest';
-import TitleSection from '../../../components/titleSection/TitleSection';
-import List from '../../../components/list/List';
-import {CATEGORIES_ARRAY_DATA} from '../../../assets/data/categoriesData';
-import TabIconItem from '../../../components/tabIconItem/TabIconItem';
 import SectionProducts from '../sectionProducts/SectionProducts';
-import SectionCategories from '../sectionСategories/SectionCategories';
+import SectionCategories from '../sectionCategories/SectionCategories';
+import NavigationTest from '../navigationTest/NavigationTest';
 
 function RootTest() {
   const styles = useStyleRootTest();
@@ -23,9 +20,11 @@ function RootTest() {
         <SectionProducts />
       </View>
 
-      <View style={styles.footer}>
+      <NavigationTest />
+
+      {/* <View style={styles.footer}>
         <Text style={styles.text}>Footer</Text>
-      </View>
+      </View> */}
     </View>
   );
 }
