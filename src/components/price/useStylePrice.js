@@ -3,6 +3,7 @@ import COLORS from '../../assets/styles/stylesColors';
 function useStylePrice() {
   const styles = StyleSheet.create({
     box: {
+      justifyContent: 'center',
       paddingVertical: 4,
       paddingHorizontal: 8,
       borderRadius: 50,

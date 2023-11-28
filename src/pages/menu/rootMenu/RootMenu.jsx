@@ -13,7 +13,9 @@ function RootMenu({navigation}) {
   const styles = useStyleRootMenu();
 
   return (
-    <LayoutImage title="Меню" imgSrc={require('../../assets/images/bg/1.webp')}>
+    <LayoutImage
+      title="Меню"
+      imgSrc={require('../../../assets/images/bg/1.webp')}>
       <View style={styles.page}>
         <View style={styles.list}>
           <List
