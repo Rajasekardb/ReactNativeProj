@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, TouchableOpacity} from 'react-native';
+import {TouchableOpacity} from 'react-native';
 
 import useStyleTabIconItem from './useStyleTabIconItem';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';

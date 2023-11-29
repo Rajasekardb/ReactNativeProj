@@ -7,7 +7,6 @@ function useStyleHeader() {
       justifyContent: 'space-between',
       alignItems: 'center',
       paddingVertical: 8,
-      backgroundColor: 'gold',
     },
 
     title: {

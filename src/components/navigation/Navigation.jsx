@@ -1,7 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
 
-import TabIconItem from '../tabIconItem/TabIconItem';
+import NavigationItem from '../navigationItem/NavigationItem';
 
 import COLORS from '../../assets/styles/stylesColors';
 import useStyleNavigation from './useStyleNavigation';
@@ -11,18 +11,8 @@ function Navigation() {
   const handlerTest = () => console.log('test');
   return (
     <View style={styles.navigation}>
-      <TabIconItem
-        iconName="basket-shopping"
-        iconSize={32}
-        iconColor={COLORS.accent}
-        onPress={handlerTest}
-      />
-      <TabIconItem
-        iconName="basket-shopping"
-        iconSize={32}
-        iconColor={COLORS.accent}
-        onPress={handlerTest}
-      />
+      <NavigationItem iconName="basket-shopping" onPress={handlerTest} />
+      <NavigationItem iconName="basket-shopping" onPress={handlerTest} />
     </View>
   );
 }

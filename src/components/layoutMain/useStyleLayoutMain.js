@@ -1,4 +1,5 @@
 import {StyleSheet, Dimensions} from 'react-native';
+import COLORS from '../../assets/styles/stylesColors';
 
 function useStyleLayoutMain() {
   const styles = StyleSheet.create({
@@ -7,20 +8,19 @@ function useStyleLayoutMain() {
       justifyContent: 'space-between',
       // width: Dimensions.get('window').width,
       // height: Dimensions.get('window').height,
-      backgroundColor: 'green',
+      backgroundColor: COLORS.bg,
     },
 
-    header: {
-      backgroundColor: 'blue',
-    },
+    header: {},
 
     main: {
       flex: 1,
-      backgroundColor: 'orange',
     },
 
     navigation: {
-      backgroundColor: 'blue',
+      borderTopLeftRadius: 20,
+      borderTopRightRadius: 20,
+      backgroundColor: COLORS.bg_dark,
     },
   });
 
