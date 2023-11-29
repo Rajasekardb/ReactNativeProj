@@ -2,7 +2,6 @@ import React from 'react';
 import {View} from 'react-native';
 
 import LayoutMain from '../../../components/layoutMain/LayoutMain';
-import Button from '../../../components/button/Button';
 import SectionProducts from '../sectionProducts/SectionProducts';
 import SectionCategories from '../sectionCategories/SectionCategories';
 

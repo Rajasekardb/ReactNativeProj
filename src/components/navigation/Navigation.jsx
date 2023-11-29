@@ -3,7 +3,6 @@ import {View} from 'react-native';
 
 import NavigationItem from '../navigationItem/NavigationItem';
 
-import COLORS from '../../assets/styles/stylesColors';
 import useStyleNavigation from './useStyleNavigation';
 
 function Navigation() {
