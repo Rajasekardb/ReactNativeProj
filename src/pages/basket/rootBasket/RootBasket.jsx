@@ -43,7 +43,12 @@ function RootBasket() {
         {basketsList.length === 0 && (
           <View style={styles.empty}>
             <Text style={styles.emptyTitle}>Пусто!</Text>
-            <FontAwesomeIcon icon="ban" size={200} color={COLORS.accent} />
+            <FontAwesomeIcon
+              style={styles.empty}
+              icon="ban"
+              size={200}
+              color={COLORS.accent}
+            />
             <Button title="Добавить" onPress={goProducts} />
           </View>
         )}

@@ -29,9 +29,14 @@ function useStyleRootBasket() {
       gap: 30,
     },
 
+    emptyIcon: {
+      opacity: 0.5,
+    },
+
     emptyTitle: {
       fontWeight: '800',
       fontSize: 64,
+      color: COLORS.accent,
     },
   });
 

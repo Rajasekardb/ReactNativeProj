@@ -11,7 +11,9 @@ function useStyleLayoutMain() {
       backgroundColor: COLORS.bg,
     },
 
-    header: {},
+    header: {
+      backgroundColor: COLORS.bg_dark,
+    },
 
     main: {
       flex: 1,

@@ -14,7 +14,7 @@ function useStyleHeader() {
       textAlign: 'center',
       fontSize: 32,
       flex: 1,
-      color: COLORS.white,
+      color: COLORS.bg_light,
     },
   });
 
