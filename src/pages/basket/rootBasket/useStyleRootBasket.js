@@ -6,11 +6,6 @@ function useStyleRootBasket() {
     page: {
       flex: 1,
     },
-
-    list: {
-      paddingVertical: 8,
-      gap: 15,
-    },
   });
 
   return styles;
