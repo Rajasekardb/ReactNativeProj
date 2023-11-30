@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, ScrollView} from 'react-native';
+import {View, ScrollView, Text} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import productsStore from '../../../store/productsStore';
 
@@ -11,27 +11,42 @@ import Price from '../../../components/price/Price';
 import Button from '../../../components/button/Button';
 
 import useStyleRootBasket from './useStyleRootBasket';
+import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+import COLORS from '../../../assets/styles/stylesColors';
 
 function RootBasket() {
   const navigation = useNavigation();
   const styles = useStyleRootBasket();
   const {basketsList, fullPriceBasket, clearBasket} = productsStore;
-
+  const goProducts = () => navigation.push(ROUTES_DATA.products.name);
   const handlerOrder = () => {
     clearBasket();
     navigation.push(ROUTES_DATA.products.name);
   };
-  return (
-    <LayoutMain title="RootBasket">
-      <View style={styles.page}>
-        <ScrollView contentContainerStyle={styles.list}>
-          <List data={basketsList} Component={ItemBasket} />
-        </ScrollView>
-      </View>
 
-      <View style={styles.footer}>
-        <Price price={fullPriceBasket} />
-        <Button title="Оформить" onPress={handlerOrder} />
+  return (
+    <LayoutMain title="Корзина">
+      <View style={styles.page}>
+        {basketsList.length > 0 && (
+          <>
+            <ScrollView contentContainerStyle={styles.list}>
+              <List data={basketsList} Component={ItemBasket} />
+            </ScrollView>
+
+            <View style={styles.footer}>
+              <Price price={fullPriceBasket} />
+              <Button title="Оформить" onPress={handlerOrder} />
+            </View>
+          </>
+        )}
+
+        {basketsList.length === 0 && (
+          <View style={styles.empty}>
+            <Text style={styles.emptyTitle}>Пусто!</Text>
+            <FontAwesomeIcon icon="ban" size={200} color={COLORS.accent} />
+            <Button title="Добавить" onPress={goProducts} />
+          </View>
+        )}
       </View>
     </LayoutMain>
   );

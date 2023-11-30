@@ -12,6 +12,7 @@ import {
   faBasketShopping,
   faShop,
   faHouse,
+  faBan,
 } from '@fortawesome/free-solid-svg-icons';
 import {library} from '@fortawesome/fontawesome-svg-core';
 
@@ -29,4 +30,5 @@ library.add(
   faBasketShopping,
   faShop,
   faHouse,
+  faBan,
 );

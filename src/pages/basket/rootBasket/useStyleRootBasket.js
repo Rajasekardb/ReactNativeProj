@@ -13,12 +13,25 @@ function useStyleRootBasket() {
     },
 
     footer: {
+      marginVertical: 5,
       flexDirection: 'row',
       justifyContent: 'space-between',
       gap: 50,
       borderRadius: 5,
       padding: 8,
       backgroundColor: COLORS.bg_light,
+    },
+
+    empty: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      gap: 30,
+    },
+
+    emptyTitle: {
+      fontWeight: '800',
+      fontSize: 64,
     },
   });
 

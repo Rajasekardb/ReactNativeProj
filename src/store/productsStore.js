@@ -9,7 +9,6 @@ class ProductsStore {
   }
 
   get productList() {
-    console.log(this.category.type);
     if (this.category.type === CATEGORIES_DATA.all.type) {
       return this.productsListAll;
     } else {
@@ -42,6 +41,8 @@ class ProductsStore {
     const product = this.findProduct(id);
     if (product.count > 1) {
       product.count--;
+    } else {
+      this.removeBasket(id);
     }
   };
 
