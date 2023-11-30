@@ -53,7 +53,7 @@ const PRODUCT_ARRAY_DATA = [
 export default PRODUCT_ARRAY_DATA.map(product => ({
   ...product,
   id: generateId(),
-  isBasket: false,
+  isBasket: true,
   count: 1,
 
   get totalPrice() {

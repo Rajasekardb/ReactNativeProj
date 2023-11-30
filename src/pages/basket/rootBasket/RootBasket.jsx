@@ -14,7 +14,9 @@ function RootBasket() {
   return (
     <LayoutMain title="RootBasket">
       <View style={styles.page}>
-        <List data={basketsList} Component={ItemBasket} />
+        <View style={styles.list}>
+          <List data={basketsList} Component={ItemBasket} />
+        </View>
       </View>
     </LayoutMain>
   );
