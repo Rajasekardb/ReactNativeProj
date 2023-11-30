@@ -10,6 +10,7 @@ import {
   faFaceSmile,
   faGlobe,
   faBasketShopping,
+  faShop,
 } from '@fortawesome/free-solid-svg-icons';
 import {library} from '@fortawesome/fontawesome-svg-core';
 
@@ -25,4 +26,5 @@ library.add(
   faPoo,
   faFaceSmile,
   faBasketShopping,
+  faShop,
 );

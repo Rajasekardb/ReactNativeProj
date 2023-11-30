@@ -1,17 +1,31 @@
 import React from 'react';
 import {View} from 'react-native';
+import {useNavigation, useRoute} from '@react-navigation/native';
 
+import {ROUTES_DATA} from '../../routes/routes-data';
 import NavigationItem from '../navigationItem/NavigationItem';
-
 import useStyleNavigation from './useStyleNavigation';
 
 function Navigation() {
   const styles = useStyleNavigation();
-  const handlerTest = () => console.log('test');
+  const navigation = useNavigation();
+  const route = useRoute();
+
+  const goProducts = () => navigation.push(ROUTES_DATA.products.name);
+  const goBasket = () => navigation.push(ROUTES_DATA.basket.name);
+
   return (
     <View style={styles.navigation}>
-      <NavigationItem iconName="basket-shopping" onPress={handlerTest} />
-      <NavigationItem iconName="basket-shopping" onPress={handlerTest} />
+      <NavigationItem
+        iconName="shop"
+        onPress={goProducts}
+        isActive={route.name === ROUTES_DATA.products.name}
+      />
+      <NavigationItem
+        iconName="basket-shopping"
+        onPress={goBasket}
+        isActive={route.name === ROUTES_DATA.basket.name}
+      />
     </View>
   );
 }
