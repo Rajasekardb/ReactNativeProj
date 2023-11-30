@@ -5,7 +5,7 @@ import productsStore from '../../../store/productsStore';
 
 import TitleSection from '../../../components/titleSection/TitleSection';
 import List from '../../../components/list/List';
-import ProductItem from '../productItem/ProductItem';
+import ItemProduct from '../itemProduct/ItemProduct';
 
 import useStyleSectionProducts from './useStyleSectionProducts';
 
@@ -17,7 +17,7 @@ function SectionProducts() {
       <TitleSection title={`${category.title}:`} />
 
       <ScrollView style={styles.scroll} contentContainerStyle={styles.list}>
-        <List data={productList} Component={ProductItem} />
+        <List data={productList} Component={ItemProduct} />
       </ScrollView>
     </View>
   );

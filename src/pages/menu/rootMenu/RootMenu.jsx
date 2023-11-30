@@ -3,7 +3,7 @@ import {View} from 'react-native';
 
 import {ROUTES_ARRAY_BUTTON} from '../../../routes/routes-data';
 
-import MenuItem from '../menuItem/MenuItem';
+import MenuItem from '../itemMenu/ItemMenu';
 import LayoutImage from '../../../components/layoutImage/LayoutImage';
 
 import useStyleRootMenu from './useStyleRootMenu';

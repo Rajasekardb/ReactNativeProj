@@ -5,9 +5,9 @@ import productsStore from '../../../store/productsStore';
 import Price from '../../../components/price/Price';
 import ButtonIcon from '../../../components/buttonIcon/ButtonIcon';
 
-import useStyleProductItem from './useStyleProductItem';
+import useStyleItemProduct from './useStyleItemProduct';
 
-function ProductItem({
+function ItemProduct({
   id,
   title,
   desc,
@@ -17,7 +17,7 @@ function ProductItem({
   category,
   isBasket,
 }) {
-  const styles = useStyleProductItem();
+  const styles = useStyleItemProduct();
   const {toggleBasket} = productsStore;
   return (
     <View style={styles.item}>
@@ -45,4 +45,4 @@ function ProductItem({
   );
 }
 
-export default ProductItem;
+export default ItemProduct;

@@ -1,10 +1,10 @@
 import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
 
-import useStyleMenuItem from './useStyleMenuItem';
+import useStyleItemMenu from './useStyleItemMenu';
 
-function MenuItem({name, title, onPress}) {
-  const styles = useStyleMenuItem();
+function ItemMenu({name, title, onPress}) {
+  const styles = useStyleItemMenu();
 
   return (
     <TouchableOpacity style={styles.button} onPress={() => onPress(name)}>
@@ -13,4 +13,4 @@ function MenuItem({name, title, onPress}) {
   );
 }
 
-export default MenuItem;
+export default ItemMenu;

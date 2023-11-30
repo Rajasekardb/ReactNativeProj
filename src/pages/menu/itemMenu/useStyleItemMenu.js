@@ -1,7 +1,7 @@
 import {StyleSheet} from 'react-native';
 import COLORS from '../../../assets/styles/stylesColors';
 
-function useStyleMenuItem() {
+function useStyleItemMenu() {
   const styles = StyleSheet.create({
     button: {
       justifyContent: 'center',
@@ -22,4 +22,4 @@ function useStyleMenuItem() {
   return styles;
 }
 
-export default useStyleMenuItem;
+export default useStyleItemMenu;
