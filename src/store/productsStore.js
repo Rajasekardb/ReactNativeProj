@@ -23,6 +23,13 @@ class ProductsStore {
     return this.productsListAll.filter(product => product.isBasket);
   }
 
+  get fullPriceBasket() {
+    return this.basketsList.reduce(
+      (acc, product) => acc + product.price * product.count,
+      0,
+    );
+  }
+
   findProduct = id => {
     return this.productsListAll.find(product => product.id === id);
   };

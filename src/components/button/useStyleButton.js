@@ -6,16 +6,17 @@ function useStyleButton() {
     button: {
       justifyContent: 'center',
       alignItems: 'center',
-      padding: 15,
-      margin: 5,
+      paddingHorizontal: 8,
       backgroundColor: COLORS.accent,
+      borderWidth: 1,
+      borderColor: COLORS.black,
       borderRadius: 10,
       elevation: 10,
     },
 
     title: {
-      fontSize: 20,
-      fontWeight: '800',
+      fontSize: 18,
+      fontWeight: '600',
       textTransform: 'uppercase',
       color: COLORS.black,
     },
