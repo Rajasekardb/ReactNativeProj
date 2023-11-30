@@ -12,6 +12,9 @@ function useStyleLayoutMain() {
     },
 
     header: {
+      borderBottomLeftRadius: 20,
+      borderBottomRightRadius: 20,
+      elevation: 7,
       backgroundColor: COLORS.bg_dark,
     },
 
@@ -22,6 +25,7 @@ function useStyleLayoutMain() {
     navigation: {
       borderTopLeftRadius: 20,
       borderTopRightRadius: 20,
+      elevation: 7,
       backgroundColor: COLORS.bg_dark,
     },
   });
