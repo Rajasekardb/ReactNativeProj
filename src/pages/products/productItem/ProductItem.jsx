@@ -1,12 +1,24 @@
 import React from 'react';
 import {Text, View, Image} from 'react-native';
 
-import useStyleProductItem from './useStyleProductItem';
+import productsStore from '../../../store/productsStore';
 import Price from '../../../components/price/Price';
 import ButtonIcon from '../../../components/buttonIcon/ButtonIcon';
 
-function ProductItem({id, title, desc, imgSrc, price, count, category}) {
+import useStyleProductItem from './useStyleProductItem';
+
+function ProductItem({
+  id,
+  title,
+  desc,
+  imgSrc,
+  price,
+  count,
+  category,
+  isBasket,
+}) {
   const styles = useStyleProductItem();
+  const {toggleBasket} = productsStore;
   return (
     <View style={styles.item}>
       <View style={styles.header}>
@@ -24,7 +36,10 @@ function ProductItem({id, title, desc, imgSrc, price, count, category}) {
 
       <View style={styles.footer}>
         <Price price={price} />
-        <ButtonIcon iconName="plus" />
+        <ButtonIcon
+          iconName={isBasket ? 'minus' : 'plus'}
+          onPress={() => toggleBasket(id)}
+        />
       </View>
     </View>
   );

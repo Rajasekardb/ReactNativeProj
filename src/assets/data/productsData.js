@@ -53,6 +53,6 @@ const PRODUCT_ARRAY_DATA = [
 export default PRODUCT_ARRAY_DATA.map(product => ({
   ...product,
   id: generateId(),
-  isBasket: true,
+  isBasket: false,
   count: 1,
 }));

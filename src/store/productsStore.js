@@ -34,6 +34,10 @@ class ProductsStore {
     return this.productsListAll.find(product => product.id === id);
   };
 
+  findProductBaskets = id => {
+    return this.basketsList.find(product => product.id === id);
+  };
+
   decrementProduct = id => {
     const product = this.findProduct(id);
     if (product.count > 1) {
@@ -59,6 +63,16 @@ class ProductsStore {
 
     if (product) {
       product.isBasket = false;
+    }
+  };
+
+  toggleBasket = id => {
+    const product = this.findProductBaskets(id);
+
+    if (product) {
+      this.removeBasket(id);
+    } else {
+      this.addBasket(id);
     }
   };
 
