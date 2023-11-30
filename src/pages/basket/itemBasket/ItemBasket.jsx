@@ -9,9 +9,8 @@ import Counter from '../../../components/counter/Counter';
 
 function ItemBasket({id, title, imgSrc, price, count}) {
   const styles = useStyleItemBasket();
-  const {removeBasket} = productsStore;
+  const {removeBasket, incrementProduct, decrementProduct} = productsStore;
 
-  console.log(price * count);
   return (
     <View style={styles.item}>
       <Image style={styles.image} source={{uri: imgSrc}} />
@@ -19,7 +18,11 @@ function ItemBasket({id, title, imgSrc, price, count}) {
       <View style={styles.main}>
         <Text style={styles.title}>{title}</Text>
         <Price price={price * count} />
-        <Counter count={count} />
+        <Counter
+          count={count}
+          onDecrement={() => decrementProduct(id)}
+          onIncrement={() => incrementProduct(id)}
+        />
       </View>
 
       <View style={styles.control}>

@@ -4,9 +4,9 @@ import COLORS from '../../assets/styles/stylesColors';
 function useStyleCounter() {
   const styles = StyleSheet.create({
     box: {
-      width: 200,
       flexDirection: 'row',
       justifyContent: 'space-between',
+      alignItems: 'center',
 
       borderRadius: 50,
       borderWidth: 1,
@@ -15,9 +15,15 @@ function useStyleCounter() {
       elevation: 7,
     },
 
-    button: {
+    count: {
       paddingHorizontal: 8,
+      fontSize: 18,
+      fontWeight: '800',
+    },
+
+    button: {
       borderColor: COLORS.black,
+      paddingHorizontal: 5,
     },
 
     increment: {

@@ -7,7 +7,7 @@ function useStyleRootBasket() {
     },
 
     list: {
-      flex: 1,
+      paddingVertical: 8,
       gap: 15,
     },
   });

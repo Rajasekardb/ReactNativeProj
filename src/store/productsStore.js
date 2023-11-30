@@ -27,6 +27,18 @@ class ProductsStore {
     return this.productsListAll.find(product => product.id === id);
   };
 
+  decrementProduct = id => {
+    const product = this.findProduct(id);
+    if (product.count > 1) {
+      product.count--;
+    }
+  };
+
+  incrementProduct = id => {
+    const product = this.findProduct(id);
+    product.count++;
+  };
+
   addBasket = id => {
     const product = this.findProduct(id);
 

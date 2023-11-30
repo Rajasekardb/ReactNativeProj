@@ -1,28 +1,30 @@
 import React from 'react';
 import {Text, TouchableOpacity, View} from 'react-native';
+import {observer} from 'mobx-react-lite';
 
 import useStyleCounter from './useStyleCounter';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 
-function Counter({count, onPress}) {
+function Counter({count, onIncrement, onDecrement}) {
   const styles = useStyleCounter();
+
   return (
     <View style={styles.box}>
-      <TouchableOpacity
-        style={[styles.increment, styles.button]}
-        onPress={onPress}>
-        <FontAwesomeIcon icon="minus" />
-      </TouchableOpacity>
+      <View style={[styles.increment, styles.button]}>
+        <TouchableOpacity onPress={onDecrement}>
+          <FontAwesomeIcon icon="minus" />
+        </TouchableOpacity>
+      </View>
 
-      <Text>{count}</Text>
+      <Text style={styles.count}>{count}</Text>
 
-      <TouchableOpacity
-        style={[styles.decrement, styles.button]}
-        onPress={onPress}>
-        <FontAwesomeIcon icon="plus" />
-      </TouchableOpacity>
+      <View style={[styles.decrement, styles.button]}>
+        <TouchableOpacity onPress={onIncrement}>
+          <FontAwesomeIcon icon="plus" />
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
 
-export default Counter;
+export default observer(Counter);

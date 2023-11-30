@@ -1,5 +1,5 @@
 import React from 'react';
-import {View} from 'react-native';
+import {View, ScrollView} from 'react-native';
 
 import productsStore from '../../../store/productsStore';
 
@@ -14,9 +14,9 @@ function RootBasket() {
   return (
     <LayoutMain title="RootBasket">
       <View style={styles.page}>
-        <View style={styles.list}>
+        <ScrollView contentContainerStyle={styles.list}>
           <List data={basketsList} Component={ItemBasket} />
-        </View>
+        </ScrollView>
       </View>
     </LayoutMain>
   );

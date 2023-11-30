@@ -55,8 +55,4 @@ export default PRODUCT_ARRAY_DATA.map(product => ({
   id: generateId(),
   isBasket: true,
   count: 1,
-
-  get totalPrice() {
-    return this.count * this.price;
-  },
 }));

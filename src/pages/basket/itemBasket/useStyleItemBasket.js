@@ -20,13 +20,12 @@ function useStyleItemBasket() {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: 'red',
       padding: 8,
       gap: 8,
     },
 
     title: {
-      // textAlign: 'center',
+      color: COLORS.black,
       fontWeight: '800',
       textTransform: 'uppercase',
     },
