@@ -11,10 +11,10 @@ import useStyleSectionProducts from './useStyleSectionProducts';
 
 function SectionProducts() {
   const styles = useStyleSectionProducts();
-  const {productList} = productsStore;
+  const {productList, category} = productsStore;
   return (
     <View style={styles.section}>
-      <TitleSection title="Продукты:" />
+      <TitleSection title={`${category.title}:`} />
 
       <ScrollView style={styles.scroll} contentContainerStyle={styles.list}>
         <List data={productList} Component={ProductItem} />

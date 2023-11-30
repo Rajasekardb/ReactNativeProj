@@ -4,24 +4,51 @@ import {CATEGORIES_DATA} from '../assets/data/categoriesData';
 class ProductsStore {
   constructor() {
     makeAutoObservable(this);
-    this.productListAll = PRODUCT_ARRAY_DATA;
+    this.productsListAll = PRODUCT_ARRAY_DATA;
     this.category = CATEGORIES_DATA.all;
   }
 
   get productList() {
     console.log(this.category.type);
     if (this.category.type === CATEGORIES_DATA.all.type) {
-      return this.productListAll;
+      return this.productsListAll;
     } else {
-      return this.productListAll.filter(
+      return this.productsListAll.filter(
         product => product.category === this.category.type,
       );
     }
   }
 
-  get basketList() {
-    return this.productListAll.filter(product => product.isBasket);
+  get basketsList() {
+    return this.productsListAll.filter(product => product.isBasket);
   }
+
+  findProduct = id => {
+    return this.productsListAll.find(product => product.id === id);
+  };
+
+  addBasket = id => {
+    const product = this.findProduct(id);
+
+    if (product) {
+      product.isBasket = true;
+    }
+  };
+
+  removeBasket = id => {
+    const product = this.findProduct(id);
+
+    if (product) {
+      product.isBasket = false;
+    }
+  };
+
+  clearBasket = () => {
+    this.basketsList.forEach(product => {
+      product.count = 1;
+      product.isBasket = false;
+    });
+  };
 
   changeCategory = category => {
     this.category = category;

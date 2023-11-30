@@ -1,12 +1,13 @@
 import AppPage from '../pages/app/AppPage';
-import MenuPage from '../pages/menu/rootMenu/RootMenu';
-import ProductsPage from '../pages/products/rootProducts/RootProducts';
+import RootBasket from '../pages/basket/rootBasket/RootBasket';
+import RootMenu from '../pages/menu/rootMenu/RootMenu';
+import RootProducts from '../pages/products/rootProducts/RootProducts';
 
 const ROUTES_DATA = {
   home: {
     id: 0,
     name: 'menu',
-    component: MenuPage,
+    component: RootMenu,
     title: 'Меню',
     isShowButton: false,
     options: {headerShown: false},
@@ -15,8 +16,17 @@ const ROUTES_DATA = {
   products: {
     id: 1,
     name: 'products',
-    component: ProductsPage,
+    component: RootProducts,
     title: 'Продукты',
+    isShowButton: true,
+    options: {headerShown: false},
+  },
+
+  basket: {
+    id: 2,
+    name: 'basket',
+    component: RootBasket,
+    title: 'Корзина',
     isShowButton: true,
     options: {headerShown: false},
   },
