@@ -4,9 +4,10 @@ function useStyleNavigation() {
   const styles = StyleSheet.create({
     navigation: {
       paddingTop: 8,
+      paddingHorizontal: 8,
       flexDirection: 'row',
-      justifyContent: 'center',
-      gap: 30,
+      justifyContent: 'space-between',
+      // gap: 30,
       elevation: 7,
     },
   });

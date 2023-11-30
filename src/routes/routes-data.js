@@ -13,8 +13,17 @@ const ROUTES_DATA = {
     options: {headerShown: false},
   },
 
-  products: {
+  home: {
     id: 1,
+    name: 'home',
+    component: RootMenu,
+    title: 'Меню',
+    isShowButton: false,
+    options: {headerShown: false},
+  },
+
+  products: {
+    id: 2,
     name: 'products',
     component: RootProducts,
     title: 'Продукты',
@@ -23,7 +32,7 @@ const ROUTES_DATA = {
   },
 
   basket: {
-    id: 2,
+    id: 3,
     name: 'basket',
     component: RootBasket,
     title: 'Корзина',

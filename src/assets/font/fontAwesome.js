@@ -11,6 +11,7 @@ import {
   faGlobe,
   faBasketShopping,
   faShop,
+  faHouse,
 } from '@fortawesome/free-solid-svg-icons';
 import {library} from '@fortawesome/fontawesome-svg-core';
 
@@ -27,4 +28,5 @@ library.add(
   faFaceSmile,
   faBasketShopping,
   faShop,
+  faHouse,
 );

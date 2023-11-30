@@ -12,6 +12,7 @@ function Navigation() {
   const route = useRoute();
 
   const goMenu = () => navigation.push(ROUTES_DATA.menu.name);
+  const goHome = () => navigation.push(ROUTES_DATA.home.name);
   const goProducts = () => navigation.push(ROUTES_DATA.products.name);
   const goBasket = () => navigation.push(ROUTES_DATA.basket.name);
 
@@ -24,10 +25,17 @@ function Navigation() {
       />
 
       <NavigationItem
+        iconName="home"
+        onPress={goHome}
+        isActive={route.name === ROUTES_DATA.home.name}
+      />
+
+      <NavigationItem
         iconName="shop"
         onPress={goProducts}
         isActive={route.name === ROUTES_DATA.products.name}
       />
+
       <NavigationItem
         iconName="basket-shopping"
         onPress={goBasket}
