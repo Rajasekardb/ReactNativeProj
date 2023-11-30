@@ -8,7 +8,7 @@ function useStyleItemBasket() {
       flexDirection: 'row',
       alignItems: 'center',
       borderRadius: 10,
-      backgroundColor: COLORS.bg_light,
+      backgroundColor: COLORS.white,
     },
 
     image: {

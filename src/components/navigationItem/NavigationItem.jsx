@@ -9,11 +9,7 @@ function NavigationItem({isActive, iconName, onPress}) {
   const styles = useStyleNavigationItem(isActive);
   return (
     <TouchableOpacity style={styles.item} onPress={onPress}>
-      <FontAwesomeIcon
-        icon={iconName}
-        size={32}
-        color={isActive ? COLORS.black : COLORS.accent}
-      />
+      <FontAwesomeIcon icon={iconName} size={32} color={COLORS.black} />
     </TouchableOpacity>
   );
 }

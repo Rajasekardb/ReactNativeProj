@@ -23,7 +23,7 @@ class ProductsStore {
     return this.productsListAll.filter(product => product.isBasket);
   }
 
-  get fullPriceBasket() {
+  get totalPriceBasket() {
     return this.basketsList.reduce(
       (acc, product) => acc + product.price * product.count,
       0,

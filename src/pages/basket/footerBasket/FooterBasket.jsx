@@ -13,9 +13,7 @@ import useStyleFooterBasket from './useStyleFooterBasket';
 function FooterBasket() {
   const styles = useStyleFooterBasket();
   const navigation = useNavigation();
-  const {fullPriceBasket, clearBasket} = productsStore;
-
-  console.log(fullPriceBasket);
+  const {totalPriceBasket, clearBasket} = productsStore;
 
   const handlerOrder = () => {
     clearBasket();
@@ -24,7 +22,7 @@ function FooterBasket() {
 
   return (
     <View style={styles.footer}>
-      <Price price={fullPriceBasket} />
+      <Price price={totalPriceBasket} />
       <Button title="Оформить" onPress={handlerOrder} />
     </View>
   );

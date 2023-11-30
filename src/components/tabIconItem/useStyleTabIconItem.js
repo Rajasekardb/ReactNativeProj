@@ -9,7 +9,7 @@ function useStyleTabIconItem(isActive) {
       padding: 7,
       borderRadius: 10,
       elevation: 7,
-      backgroundColor: isActive ? COLORS.accent : COLORS.bg_light,
+      backgroundColor: isActive ? COLORS.accent : COLORS.white,
     },
   });
 
