@@ -11,11 +11,18 @@ function Navigation() {
   const navigation = useNavigation();
   const route = useRoute();
 
+  const goMenu = () => navigation.push(ROUTES_DATA.menu.name);
   const goProducts = () => navigation.push(ROUTES_DATA.products.name);
   const goBasket = () => navigation.push(ROUTES_DATA.basket.name);
 
   return (
     <View style={styles.navigation}>
+      <NavigationItem
+        iconName="bars"
+        onPress={goMenu}
+        isActive={route.name === ROUTES_DATA.menu}
+      />
+
       <NavigationItem
         iconName="shop"
         onPress={goProducts}

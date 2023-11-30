@@ -10,18 +10,6 @@ function useStyleHeader() {
       paddingVertical: 8,
     },
 
-    leftHub: {
-      flexDirection: 'row',
-      gap: 15,
-    },
-
-    rightHub: {
-      // Fix symmetry
-      paddingLeft: 45,
-      flexDirection: 'row',
-      gap: 15,
-    },
-
     title: {
       textAlign: 'center',
       fontSize: 32,

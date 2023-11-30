@@ -24,6 +24,7 @@ function useStyleCounter() {
     button: {
       borderColor: COLORS.black,
       paddingHorizontal: 5,
+      paddingVertical: 5,
     },
 
     increment: {

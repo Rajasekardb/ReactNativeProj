@@ -4,7 +4,7 @@ import RootMenu from '../pages/menu/rootMenu/RootMenu';
 import RootProducts from '../pages/products/rootProducts/RootProducts';
 
 const ROUTES_DATA = {
-  home: {
+  menu: {
     id: 0,
     name: 'menu',
     component: RootMenu,
