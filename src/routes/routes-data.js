@@ -1,6 +1,7 @@
 import AppPage from '../pages/app/AppPage';
 import RootBasket from '../pages/basket/rootBasket/RootBasket';
 import RootMenu from '../pages/menu/rootMenu/RootMenu';
+import RootProductDetails from '../pages/productDetails/rootProductDetails/RootProductDetails';
 import RootProducts from '../pages/products/rootProducts/RootProducts';
 
 const ROUTES_DATA = {
@@ -37,6 +38,15 @@ const ROUTES_DATA = {
     component: RootBasket,
     title: 'Корзина',
     isShowButton: true,
+    options: {headerShown: false},
+  },
+
+  productDetails: {
+    id: 4,
+    name: 'productDetails',
+    component: RootProductDetails,
+    title: 'Детали',
+    isShowButton: false,
     options: {headerShown: false},
   },
 

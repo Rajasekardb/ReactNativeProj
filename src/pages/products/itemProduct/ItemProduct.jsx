@@ -1,11 +1,13 @@
 import React from 'react';
-import {Text, View, Image} from 'react-native';
+import {Text, View, TouchableOpacity, Image} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
 import productsStore from '../../../store/productsStore';
 import Price from '../../../components/price/Price';
 import ButtonIcon from '../../../components/buttonIcon/ButtonIcon';
 
 import useStyleItemProduct from './useStyleItemProduct';
+import {ROUTES_DATA} from '../../../routes/routes-data';
 
 function ItemProduct({
   id,
@@ -19,8 +21,12 @@ function ItemProduct({
 }) {
   const styles = useStyleItemProduct();
   const {toggleBasket} = productsStore;
+  const navigation = useNavigation();
+  const handlerPress = () =>
+    navigation.push(ROUTES_DATA.productDetails.name, {id});
+
   return (
-    <View style={styles.item}>
+    <TouchableOpacity style={styles.item} onPress={handlerPress}>
       <View style={styles.header}>
         <Text style={styles.title}>{title}</Text>
       </View>
@@ -41,7 +47,7 @@ function ItemProduct({
           onPress={() => toggleBasket(id)}
         />
       </View>
-    </View>
+    </TouchableOpacity>
   );
 }
 

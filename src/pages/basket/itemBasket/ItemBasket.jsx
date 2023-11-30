@@ -1,18 +1,25 @@
 import React from 'react';
-import {Image, Text, View} from 'react-native';
+import {Image, Text, View, TouchableOpacity} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
+import {ROUTES_DATA} from '../../../routes/routes-data';
 import productsStore from '../../../store/productsStore';
-import useStyleItemBasket from './useStyleItemBasket';
+
 import Price from '../../../components/price/Price';
 import ButtonIcon from '../../../components/buttonIcon/ButtonIcon';
 import Counter from '../../../components/counter/Counter';
 
+import useStyleItemBasket from './useStyleItemBasket';
+
 function ItemBasket({id, title, imgSrc, price, count}) {
   const styles = useStyleItemBasket();
   const {removeBasket, incrementProduct, decrementProduct} = productsStore;
+  const navigation = useNavigation();
+  const handlerPress = () =>
+    navigation.push(ROUTES_DATA.productDetails.name, {id});
 
   return (
-    <View style={styles.item}>
+    <TouchableOpacity style={styles.item} onPress={handlerPress}>
       <Image style={styles.image} source={{uri: imgSrc}} />
 
       <View style={styles.main}>
@@ -28,7 +35,7 @@ function ItemBasket({id, title, imgSrc, price, count}) {
       <View style={styles.control}>
         <ButtonIcon iconName="minus" onPress={() => removeBasket(id)} />
       </View>
-    </View>
+    </TouchableOpacity>
   );
 }
 
