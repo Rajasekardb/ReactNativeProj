@@ -22,16 +22,16 @@ const CATEGORIES_DATA = {
 
   category3: {
     id: '3',
-    title: 'Категория 3',
-    iconName: 'star',
-    type: 'category3',
+    title: 'Планшеты',
+    iconName: 'tablet',
+    type: 'tablet',
   },
 
   category4: {
     id: '4',
-    title: 'Категория 4',
-    iconName: 'poo',
-    type: 'category4',
+    title: 'Часы',
+    iconName: 'clock',
+    type: 'clock',
   },
 
   category5: {

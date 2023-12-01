@@ -3,7 +3,6 @@ import {
   faBars,
   faPlus,
   faMinus,
-  faStar,
   faPoo,
   faFaceSmile,
   faGlobe,
@@ -13,6 +12,8 @@ import {
   faBan,
   faMobile,
   faLaptop,
+  faTablet,
+  faClock,
 } from '@fortawesome/free-solid-svg-icons';
 import {library} from '@fortawesome/fontawesome-svg-core';
 
@@ -22,7 +23,6 @@ library.add(
   faPlus,
   faMinus,
   faGlobe,
-  faStar,
   faPoo,
   faFaceSmile,
   faBasketShopping,
@@ -31,4 +31,6 @@ library.add(
   faBan,
   faMobile,
   faLaptop,
+  faTablet,
+  faClock,
 );

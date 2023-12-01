@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {Dimensions, StyleSheet} from 'react-native';
 import COLORS from '../../../assets/styles/stylesColors';
 
 function useStyleRootProductDetails() {
@@ -9,7 +9,17 @@ function useStyleRootProductDetails() {
       backgroundColor: COLORS.bg_dark,
     },
 
-    scroll: {
+    scrollImages: {
+      height: 700,
+    },
+
+    imagesBox: {},
+
+    image: {
+      width: Dimensions.get('window').width,
+    },
+
+    scrollContent: {
       marginBottom: 10,
     },
 
@@ -19,11 +29,6 @@ function useStyleRootProductDetails() {
       borderBottomLeftRadius: 30,
       borderBottomRightRadius: 30,
       gap: 15,
-    },
-
-    image: {
-      width: '100%',
-      height: 300,
     },
 
     title: {
