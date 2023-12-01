@@ -1,5 +1,6 @@
 import React from 'react';
 import {ScrollView, View} from 'react-native';
+import {observer} from 'mobx-react-lite';
 
 import productsStore from '../../../store/productsStore';
 
@@ -23,4 +24,4 @@ function SectionProducts() {
   );
 }
 
-export default SectionProducts;
+export default observer(SectionProducts);

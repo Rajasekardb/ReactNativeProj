@@ -15,7 +15,6 @@ function RootProducts() {
       <View style={styles.page}>
         <SectionCategories />
         <SectionProducts />
-        {/* <Button title="Кнопка" /> */}
       </View>
     </LayoutMain>
   );

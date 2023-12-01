@@ -17,11 +17,7 @@ function SectionCategories() {
         style={styles.scroll}
         contentContainerStyle={styles.list}
         horizontal>
-        <List
-          data={CATEGORIES_ARRAY_DATA}
-          Component={TabIconItem}
-          iconSize={48}
-        />
+        <List data={CATEGORIES_ARRAY_DATA} Component={TabIconItem} />
       </ScrollView>
     </View>
   );
