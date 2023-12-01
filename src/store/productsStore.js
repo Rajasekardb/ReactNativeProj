@@ -2,6 +2,7 @@ import {makeAutoObservable} from 'mobx';
 
 import PRODUCT_ARRAY_DATA from '../assets/data/productsData';
 import {CATEGORIES_DATA} from '../assets/data/categoriesData';
+// console.log(PRODUCT_ARRAY_DATA);
 class ProductsStore {
   constructor() {
     makeAutoObservable(this);

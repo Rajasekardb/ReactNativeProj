@@ -28,7 +28,9 @@ function ItemProduct({
   return (
     <TouchableOpacity style={styles.item} onPress={handlerPress}>
       <View style={styles.header}>
-        <Text style={styles.title}>{title}</Text>
+        <Text style={styles.title} numberOfLines={1}>
+          {title}
+        </Text>
       </View>
 
       <View style={styles.main}>

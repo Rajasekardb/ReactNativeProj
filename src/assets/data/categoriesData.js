@@ -8,16 +8,16 @@ const CATEGORIES_DATA = {
 
   category1: {
     id: '1',
-    title: 'Категория 1',
-    iconName: 'heart',
-    type: 'category1',
+    title: 'Смартфоны',
+    iconName: 'mobile',
+    type: 'mobile',
   },
 
   category2: {
     id: '2',
-    title: 'Категория 2',
-    iconName: 'bomb',
-    type: 'category2',
+    title: 'Ноутбуки',
+    iconName: 'laptop',
+    type: 'laptop',
   },
 
   category3: {
@@ -31,14 +31,14 @@ const CATEGORIES_DATA = {
     id: '4',
     title: 'Категория 4',
     iconName: 'poo',
-    type: 'category3',
+    type: 'category4',
   },
 
   category5: {
     id: '5',
     title: 'Категория 5',
     iconName: 'face-smile',
-    type: 'category3',
+    type: 'category5',
   },
 };
 
