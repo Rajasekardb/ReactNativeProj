@@ -2,7 +2,9 @@ import React from 'react';
 import {Text, View, ScrollView, Image} from 'react-native';
 import {useNavigation, useRoute} from '@react-navigation/native';
 
+import {ROUTES_DATA} from '../../../routes/routes-data';
 import productsStore from '../../../store/productsStore';
+
 import useStyleRootProductDetails from './useStyleRootProductDetails';
 import Container from '../../../components/container/Container';
 import Button from '../../../components/button/Button';
@@ -14,12 +16,21 @@ function RootProductDetails() {
   const navigation = useNavigation();
   const route = useRoute();
   const id = route.params.id;
-  const {findProduct, addBasket} = productsStore;
-  const {title, imgSrc, desc, price} = findProduct(id);
+  const {findProduct, addBasket, removeBasket} = productsStore;
+  const {title, imgSrc, desc, price, isBasket} = findProduct(id);
+  const product = findProduct(id);
   const goBack = () => navigation.goBack();
+  const goBasket = () => navigation.push(ROUTES_DATA.basket.name);
   const handlerBuy = () => {
     addBasket(id);
+    // goBasket();
   };
+  const handlerDelete = () => {
+    removeBasket(id);
+  };
+
+  console.log(isBasket);
+
   return (
     <View style={styles.page}>
       <Image style={styles.image} source={{uri: imgSrc}} />
@@ -35,7 +46,10 @@ function RootProductDetails() {
         <View style={styles.footer}>
           <ButtonIcon onPress={goBack} iconName="arrow-left" />
           <Price price={price} />
-          <Button title="Купить" onPress={handlerBuy} />
+          <Button
+            title={isBasket ? 'Удалить' : 'Добавить'}
+            onPress={isBasket ? handlerDelete : handlerBuy}
+          />
         </View>
       </Container>
     </View>

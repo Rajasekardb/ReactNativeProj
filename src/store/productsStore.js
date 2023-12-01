@@ -1,4 +1,4 @@
-import {makeAutoObservable, autorun} from 'mobx';
+import {makeAutoObservable} from 'mobx';
 
 import PRODUCT_ARRAY_DATA from '../assets/data/productsData';
 import {CATEGORIES_DATA} from '../assets/data/categoriesData';
