@@ -19,7 +19,6 @@ function ItemProduct({
   category,
   isBasket,
 }) {
-  console.log('render ItemProduct', isBasket);
   const styles = useStyleItemProduct();
   const {toggleBasket} = productsStore;
   const navigation = useNavigation();

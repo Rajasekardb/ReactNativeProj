@@ -4,6 +4,7 @@ import COLORS from '../../assets/styles/stylesColors';
 function useStyleButton() {
   const styles = StyleSheet.create({
     button: {
+      minWidth: 150,
       justifyContent: 'center',
       alignItems: 'center',
       paddingHorizontal: 8,

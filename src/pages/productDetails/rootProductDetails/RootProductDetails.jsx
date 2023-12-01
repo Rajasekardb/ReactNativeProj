@@ -1,6 +1,7 @@
 import React from 'react';
 import {Text, View, ScrollView, Image} from 'react-native';
 import {useNavigation, useRoute} from '@react-navigation/native';
+import {observer} from 'mobx-react-lite';
 
 import {ROUTES_DATA} from '../../../routes/routes-data';
 import productsStore from '../../../store/productsStore';
@@ -18,7 +19,7 @@ function RootProductDetails() {
   const id = route.params.id;
   const {findProduct, addBasket, removeBasket} = productsStore;
   const {title, imgSrc, desc, price, isBasket} = findProduct(id);
-  const product = findProduct(id);
+
   const goBack = () => navigation.goBack();
   const goBasket = () => navigation.push(ROUTES_DATA.basket.name);
   const handlerBuy = () => {
@@ -28,8 +29,6 @@ function RootProductDetails() {
   const handlerDelete = () => {
     removeBasket(id);
   };
-
-  console.log(isBasket);
 
   return (
     <View style={styles.page}>
@@ -56,4 +55,4 @@ function RootProductDetails() {
   );
 }
 
-export default RootProductDetails;
+export default observer(RootProductDetails);
