@@ -11,7 +11,7 @@ import Counter from '../../../components/counter/Counter';
 
 import useStyleItemBasket from './useStyleItemBasket';
 
-function ItemBasket({id, title, imgSrc, price, count}) {
+function ItemBasket({id, title, imgCover, price, count}) {
   const styles = useStyleItemBasket();
   const {removeBasket, incrementProduct, decrementProduct} = productsStore;
   const navigation = useNavigation();
@@ -20,7 +20,7 @@ function ItemBasket({id, title, imgSrc, price, count}) {
 
   return (
     <TouchableOpacity style={styles.item} onPress={handlerPress}>
-      <Image style={styles.image} source={{uri: imgSrc}} />
+      <Image style={styles.image} source={{uri: imgCover}} />
 
       <View style={styles.main}>
         <Text style={styles.title}>{title}</Text>

@@ -13,7 +13,7 @@ function ItemProduct({
   id,
   title,
   desc,
-  imgSrc,
+  imgCover,
   price,
   count,
   category,
@@ -34,7 +34,7 @@ function ItemProduct({
       </View>
 
       <View style={styles.main}>
-        <Image style={styles.image} source={{uri: imgSrc}} />
+        <Image style={styles.image} source={{uri: imgCover}} />
         <View style={styles.mainInner}>
           <Text style={styles.desc} numberOfLines={4}>
             {desc}

@@ -18,7 +18,7 @@ function RootProductDetails() {
   const route = useRoute();
   const id = route.params.id;
   const {findProduct, addBasket, removeBasket} = productsStore;
-  const {title, imgSrc, desc, price, isBasket} = findProduct(id);
+  const {title, imgCover, desc, price, isBasket} = findProduct(id);
 
   const goBack = () => navigation.goBack();
   const goBasket = () => navigation.push(ROUTES_DATA.basket.name);
@@ -32,7 +32,7 @@ function RootProductDetails() {
 
   return (
     <View style={styles.page}>
-      <Image style={styles.image} source={{uri: imgSrc}} />
+      <Image style={styles.image} source={{uri: imgCover}} />
 
       <ScrollView style={styles.scroll} contentContainerStyle={styles.main}>
         <Container>

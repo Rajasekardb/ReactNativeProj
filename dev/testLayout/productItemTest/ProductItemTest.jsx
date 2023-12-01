@@ -5,7 +5,7 @@ import useStyleProductItemTest from './useStyleProductItemTest';
 import Price from '../../../components/price/Price';
 import ButtonIcon from '../../../components/buttonIcon/ButtonIcon';
 
-function ProductItemTest({id, title, desc, imgSrc, price, count, category}) {
+function ProductItemTest({id, title, desc, imgCover, price, count, category}) {
   const styles = useStyleProductItemTest();
   return (
     <View style={styles.item}>
@@ -14,7 +14,7 @@ function ProductItemTest({id, title, desc, imgSrc, price, count, category}) {
       </View>
 
       <View style={styles.main}>
-        <Image style={styles.image} source={{uri: imgSrc}} />
+        <Image style={styles.image} source={{uri: imgCover}} />
         <View style={styles.mainInner}>
           <Text style={styles.desc} numberOfLines={4}>
             {desc}
