@@ -5,9 +5,10 @@ import {CATEGORIES_DATA} from '../assets/data/categoriesData';
 class ProductsStore {
   constructor() {
     makeAutoObservable(this);
-    this.productsListAll = PRODUCT_ARRAY_DATA;
-    this.category = CATEGORIES_DATA.all;
   }
+
+  productsListAll = PRODUCT_ARRAY_DATA;
+  category = CATEGORIES_DATA.all;
 
   get productList() {
     if (this.category.type === CATEGORIES_DATA.all.type) {
