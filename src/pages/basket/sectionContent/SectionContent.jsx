@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, ScrollView} from 'react-native';
+import {observer} from 'mobx-react-lite';
 
 import productsStore from '../../../store/productsStore';
 import List from '../../../components/list/List';
@@ -22,4 +23,4 @@ function SectionContent() {
   );
 }
 
-export default SectionContent;
+export default observer(SectionContent);

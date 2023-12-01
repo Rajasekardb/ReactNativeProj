@@ -31,6 +31,10 @@ class ProductsStore {
     );
   }
 
+  get countItemsBasket() {
+    return this.basketsList.length;
+  }
+
   findProduct = id => {
     return this.productsListAll.find(product => product.id === id);
   };

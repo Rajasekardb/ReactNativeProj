@@ -1,6 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
+import {observer} from 'mobx-react-lite';
 
 import {ROUTES_DATA} from '../../../routes/routes-data';
 import productsStore from '../../../store/productsStore';
@@ -28,4 +29,4 @@ function FooterBasket() {
   );
 }
 
-export default FooterBasket;
+export default observer(FooterBasket);

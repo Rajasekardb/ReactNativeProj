@@ -1,5 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
+import {observer} from 'mobx-react-lite';
+
 import productsStore from '../../../store/productsStore';
 
 import LayoutMain from '../../../components/layoutMain/LayoutMain';
@@ -10,16 +12,16 @@ import useStyleRootBasket from './useStyleRootBasket';
 
 function RootBasket() {
   const styles = useStyleRootBasket();
-  const {basketsList} = productsStore;
+  const {countItemsBasket} = productsStore;
 
   return (
     <LayoutMain title="Корзина">
       <View style={styles.page}>
-        {basketsList.length > 0 && <SectionContent />}
-        {basketsList.length === 0 && <EmptyBasket />}
+        {countItemsBasket > 0 && <SectionContent />}
+        {countItemsBasket === 0 && <EmptyBasket />}
       </View>
     </LayoutMain>
   );
 }
 
-export default RootBasket;
+export default observer(RootBasket);
