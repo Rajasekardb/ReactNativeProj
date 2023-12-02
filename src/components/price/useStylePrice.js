@@ -9,7 +9,7 @@ function useStylePrice() {
       borderRadius: 50,
       borderWidth: 1,
       borderColor: COLORS.black,
-      backgroundColor: COLORS.accent,
+      backgroundColor: COLORS.bg_light,
       elevation: 7,
     },
 

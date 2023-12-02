@@ -7,7 +7,7 @@ function useStyleTitleSection() {
       paddingVertical: 5,
       paddingHorizontal: 30,
       borderRadius: 10,
-      backgroundColor: COLORS.bg_light,
+      backgroundColor: COLORS.white,
     },
     title: {
       color: COLORS.black,

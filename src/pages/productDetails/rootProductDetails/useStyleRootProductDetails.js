@@ -24,7 +24,7 @@ function useStyleRootProductDetails() {
     },
 
     main: {
-      backgroundColor: COLORS.white,
+      backgroundColor: COLORS.light,
       paddingBottom: 30,
       borderBottomLeftRadius: 30,
       borderBottomRightRadius: 30,

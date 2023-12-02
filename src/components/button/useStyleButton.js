@@ -8,7 +8,7 @@ function useStyleButton() {
       justifyContent: 'center',
       alignItems: 'center',
       paddingHorizontal: 8,
-      backgroundColor: COLORS.accent,
+      backgroundColor: COLORS.bg_light,
       borderWidth: 1,
       borderColor: COLORS.black,
       borderRadius: 10,

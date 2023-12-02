@@ -6,7 +6,7 @@ function useStyleItemProduct() {
     item: {
       flex: 1,
       flexBasis: '40%',
-      backgroundColor: COLORS.white,
+      backgroundColor: COLORS.light,
       borderRadius: 15,
       overflow: 'hidden',
       elevation: 7,
