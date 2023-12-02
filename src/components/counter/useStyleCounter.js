@@ -19,6 +19,8 @@ function useStyleCounter() {
       paddingHorizontal: 8,
       fontSize: 18,
       fontWeight: '800',
+      opacity: 0.8,
+      color: COLORS.black,
     },
 
     button: {
