@@ -9,7 +9,7 @@ import LayoutImage from '../../../components/layoutImage/LayoutImage';
 import useStyleRootMenu from './useStyleRootMenu';
 import List from '../../../components/list/List';
 
-function RootMenu({navigation}) {
+function RootMenu() {
   const styles = useStyleRootMenu();
 
   return (
@@ -18,11 +18,7 @@ function RootMenu({navigation}) {
       imgSrc={require('../../../assets/images/bg/1.webp')}>
       <View style={styles.page}>
         <View style={styles.list}>
-          <List
-            data={ROUTES_ARRAY_BUTTON}
-            Component={MenuItem}
-            onPress={name => navigation.push(name)}
-          />
+          <List data={ROUTES_ARRAY_BUTTON} Component={MenuItem} />
         </View>
       </View>
     </LayoutImage>
