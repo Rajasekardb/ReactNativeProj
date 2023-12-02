@@ -30,7 +30,6 @@ function RootProductDetails() {
     removeBasket(id);
   };
 
-  console.log(images);
   return (
     <View style={styles.page}>
       <ScrollView
