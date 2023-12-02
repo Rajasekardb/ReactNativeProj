@@ -32,6 +32,11 @@ function useStyleItemProduct() {
       padding: 8,
     },
 
+    desc: {
+      opacity: 0.8,
+      color: COLORS.black,
+    },
+
     image: {
       width: '100%',
       height: 100,

@@ -41,6 +41,8 @@ function useStyleRootProductDetails() {
 
     desc: {
       fontSize: 18,
+      opacity: 0.8,
+      color: COLORS.black,
     },
 
     footer: {
