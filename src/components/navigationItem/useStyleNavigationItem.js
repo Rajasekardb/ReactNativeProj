@@ -26,7 +26,8 @@ function useStyleNavigationItem(isActive) {
       paddingHorizontal: 5,
       fontSize: 12,
       borderRadius: 30,
-      backgroundColor: COLORS.bg_light,
+      backgroundColor: '#FF4D00',
+      color: COLORS.black,
     },
   });
 

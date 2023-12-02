@@ -40,6 +40,7 @@ function Navigation() {
         iconName="basket-shopping"
         onPress={goBasket}
         isActive={route.name === ROUTES_DATA.basket.name}
+        isShowCount={true}
       />
     </View>
   );

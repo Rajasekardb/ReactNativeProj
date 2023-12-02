@@ -10,7 +10,7 @@ function useStyleFooterBasket() {
       gap: 50,
       borderRadius: 5,
       padding: 8,
-      backgroundColor: COLORS.accent,
+      backgroundColor: COLORS.white,
     },
   });
 
